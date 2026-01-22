@@ -212,6 +212,111 @@ body {
     opacity: 1;
 }
 
+.hero-intro {
+    font-size: 16px;
+    color: #00a8e8;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Hero Right Section */
+.hero-right {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Emergency Contact Widget */
+.emergency-widget {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    padding: 25px;
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    animation: slideUp 0.6s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.emergency-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.emergency-icon {
+    font-size: 24px;
+}
+
+.emergency-text {
+    font-size: 16px;
+}
+
+.emergency-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.emergency-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.emergency-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.emergency-phone:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.phone-icon {
+    font-size: 20px;
+}
+
+.emergency-subtext {
+    font-size: 12px;
+    opacity: 0.85;
+    margin: 0;
+}
+
 /* CTA Button */
 .cta-button {
     background-color: #00a8e8;
@@ -312,6 +417,14 @@ body {
 
     .hero-text p {
         font-size: 16px;
+    }
+
+    .hero-intro {
+        font-size: 14px;
+    }
+
+    .emergency-widget {
+        max-width: 100%;
     }
 
     .button-group {
